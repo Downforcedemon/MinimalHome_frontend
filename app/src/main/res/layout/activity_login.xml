@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp"
+              android:gravity="center">
+    <EditText
+            android:id="@+id/usernameInput"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:hint="Username"
+            android:layout_marginBottom="16dp"/>
+    <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginBottom="16dp"/>
+    <Button
+            android:id="@+id/loginButton"
+            android:layout_width="139dp"
+            android:layout_height="18dp"
+            android:text="Login"/>
+    <TextView
+            android:id="@+id/registerLink"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Don't have an account? Register here."
+            android:layout_marginTop="16dp"/>
+    <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"/>
+</LinearLayout>
