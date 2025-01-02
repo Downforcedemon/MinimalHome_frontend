@@ -16,6 +16,8 @@ import com.example.minimalhome.ui.home.HomeActivity;
 import com.example.minimalhome.service.AuthService;
 import com.example.minimalhome.util.JwtUtil;
 import com.example.minimalhome.util.PreferencesUtil;
+import com.example.minimalhome.service.AuthCallback;
+
 
 class LoginActivity extends AppCompatActivity {
 
@@ -78,7 +80,7 @@ class LoginActivity extends AppCompatActivity {
         progressBar.setVisibility(View.VISIBLE);
 
         try {
-            authService.login(username, password, new AuthService.AuthCallback() {
+            authService.login(username, password, new AuthCallback() {
                 @Override
                 public void onSuccess(String token) {
                     // Save token and navigate to home
